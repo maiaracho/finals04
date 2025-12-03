@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made by Mari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <!---Hamburger Menu-->
+    <div id="sideMenu" class="side-menu">
+        <a href="../Home/index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="../products/products.html">Products</a>
+        <a href="../contact/contact.html">Contact</a>
+    </div>
+
+    <div id="overlay"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="top-bar-email"><i class="fas fa-envelope"></i> marizracho@gmail.com</span>
+        <span class="top-bar-promo">✧✧✧ 10% OFF FOR FIRST TIME PURCHASES WITH THE CODE: MARUCHI ✧✧✧</span>
+    </div>
+
+    <!-- Navigation -->
+<nav>
+    <div class="nav-left">
+        <button id="hamburgerBtn" class="hamburger">&#9776;</button>
+    </div>
+
+    <div class="logo">
+        <img src="assets/logo_orange.png" alt="Made by Mari Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../products/products.html">Products</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+        <span class="search">🔍</span>
+        <span class="wishlist">❤️</span>
+        <span class="cart">🛒</span>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Crafted For You</h1>
+        <p>Handmade jewelry for your personal style</p>
+    </section>
+
+    <!-- Category Banner -->
+    <section class="mini-banner">
+        Made by Mari for Everyone
+    </section>
+
+    <!-- Image Strip -->
+    <section class="image-row">
+        <img src="Assets/img1.jpeg">
+        <img src="Assets/img2.jpeg">
+    </section>
+
+    <!-- Floral Connection Section -->
+<section class="floral-connection-wrapper">
+
+    <!-- Left Panel -->
+    <div class="floral-left">
+        <h2>Floral Connection</h2>
+        <p>Expressing love through flowers</p>
+        <button class="shop-btn">SHOP NOW ➜</button>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="floral-products">
+        
+        <div class="floral-item">
+            <img src="Assets/prod1.jpeg">
+            <p class="prod-name">Tulip Orange</p>
+            <p class="prod-price">₱345.00 PHP</p>
+        </div>
+
+        <div class="floral-item">
+            <img src="Assets/prod2.jpeg">
+            <p class="prod-name"> Bell Paleblue</p>
+            <p class="prod-price">₱345.00 PHP</p>
+        </div>
+
+        <div class="floral-item">
+            <img src="Assets/prod3.jpeg">
+            <p class="prod-name">Tulip Hotpink</p>
+            <p class="prod-price">₱345.00 PHP</p>
+        </div>
+
+        <div class="floral-item">
+            <img src="Assets/prod4.jpeg">
+            <p class="prod-name">Bell Blue</p>
+            <p class="prod-price">₱345.00 PHP</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+<section class="image-gallery">
+
+    <div class="gallery-row">
+        <img src="Assets/gallery1.jpeg">
+        <img src="Assets/gallery2.jpeg">
+        <img src="Assets/gallery3.jpeg">
+    </div>
+
+    <div class="gallery-row">
+        <img src="Assets/gallery4.jpeg">
+        <img src="Assets/gallery5.jpeg">
+    </div>
+
+</section>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-left">
+            <a>Shop</a>
+            <a>About</a>
+            <a>Size Chart</a>
+            <a>Contact Us</a>
+        </div>
+
+        <div class="footer-right">
+            <p><strong>Customer Service</strong> marizracho@gmail.com</p>
+            <p><strong>General Inquiries</strong> madebymari@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="payments">
+            <img src="Assets/visa.png">
+            <img src="Assets/mastercard.png">
+            <img src="Assets/Gcash.png">
+        </div>
+
+        <p class="credit">made by mari | E-commerce by Maia Racho</p>
+
+        <div class="policy-links">
+            <a>REFUND POLICY</a>
+            <a>SHIPPING POLICY</a>
+        </div>
+    </div>
+
+</footer>
+<script>
+    const hamburger = document.getElementById("hamburgerBtn");
+    const sideMenu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+
+    hamburger.addEventListener("click", () => {
+        sideMenu.classList.toggle("open");
+        overlay.classList.toggle("show");
+    });
+
+    overlay.addEventListener("click", () => {
+        sideMenu.classList.remove("open");
+        overlay.classList.remove("show");
+    });
+</script>
+
+
+
+</body>
+</html>
